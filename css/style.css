@@ -1,0 +1,161 @@
+header{
+  display: flex;
+  padding: 0px 10px;
+  background: #000;
+}
+
+header .logo{
+  display: inline-block;
+  padding: 6px 0;
+}
+
+header nav{
+  text-align: right;
+  width: 100%;
+  font-size: 0;/* 解決inline-block裡超連結文字跟文字間會有間距問題，跟底上是一組的 */
+}
+
+header nav a{
+  font-size: 16px;/* 解決inline-block裡超連結文字跟文字間會有間距問題，跟上面是一組的 */
+  color: #fff;
+  text-decoration: none;
+  /* 設定inline-block，讓a可以調整高跟寬 */
+  display: inline-block;
+  /* line-height: 52px為img高40px+paading上下各6px=52px */
+  line-height: 52px;
+  padding: 0 10px;
+}
+
+header nav a:hover{
+  background: #fa0;
+}
+
+.banner img{
+  width: 100%;
+}
+
+.path{
+  display: flex;
+}
+
+.path li{
+  padding: 6px 8px;
+  position: relative;
+}
+
+.path li a{
+  color: #aaa;
+  text-decoration: none;
+}
+
+.path li+li::before{
+  content: "/";
+  color: #aaa;
+  position: absolute;
+  left: 0;
+}
+
+.wrap{
+  width: 960px;
+  margin: auto;
+}
+
+.item h3{
+  font-size: 36px;
+  padding: 0 0 30px;
+}
+
+.about{
+  margin-bottom: 40px;
+}
+
+.about .wrap{
+  display: flex;
+}
+
+.about .wrap .item{
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.about h2{
+  width: 100%;
+  font-size: 42px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about > p{
+  width: 650px;
+  margin: auto;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+
+.about img{
+  border-radius: 50%;
+}
+.products{
+  background: #ccc;
+}
+
+.products .wrap{
+  display: flex;
+}
+
+.products .item{
+  width: 50%;
+}
+
+.products .item img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.products .text{
+  page-break-after: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service{
+  padding: 40px 0;
+}
+
+.service > h2{
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  font-size: 42px;
+  padding: 20px 0;
+}
+
+.service > p{
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+
+.service .wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .item{
+  text-align: center;
+}
+
+.service .itme img{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  background: #000;
+  color: #888;
+  padding: 20px 0;
+}
