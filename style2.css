@@ -1,0 +1,42 @@
+.banner{
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  /* background: linear-gradient(方向[right or 90deg], 漸層顏色1 寬度[%或px], 漸層顏色2[%或px]); */
+  background:
+      linear-gradient(115deg, #7bf 50%, transparent 50%) center center / 100% 100%,
+      url("https://picsum.photos/1200/600?image=100") right center / auto 100%;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+.banner-txt{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner-txt h1{
+  font-size: 80px;
+  border-bottom: 1px solid #333;
+}
+
+.banner-txt h1 small{
+  display: block;
+  font-size: 53px;
+}
+
+.banner-txt h2{
+  font-size: 50px;
+}
+
+.banner-txt p{
+  font-size: 30px;
+}
