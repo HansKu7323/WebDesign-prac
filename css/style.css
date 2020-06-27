@@ -43,6 +43,10 @@ header nav a:hover{
   position: relative;
 }
 
+/* .path li:hover{
+  cursor: pointer;
+} */
+
 .path li a{
   color: #aaa;
   text-decoration: none;
