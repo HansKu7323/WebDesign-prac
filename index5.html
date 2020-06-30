@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design model</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    body{
+      padding: 100px 0;
+      background: linear-gradient(20deg,#3d5493,#1aa2a0) fixed center center/100% 100%;
+    }
+
+    .wrap{
+      width: 1200px;
+      margin: auto;
+    }
+
+    .item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 70px;
+      /* background-color: #ccc; */
+    }
+
+    .item .pic{
+      width: 55%;
+    }
+
+    .item .pic img{
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    .item .txt{
+      width: 55%;
+      background-color: #fa8;
+      flex-shrink: 0;
+      padding: 50px 30px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+
+    .item > :first-child{
+      margin-right: -10%;
+    }
+  
+
+    .item:nth-child(1) .txt{
+      background-color: rgba(240, 174, 193, .7);
+    }
+    .item:nth-child(2) .txt{
+      background-color: rgba(42, 253, 208, .7);
+    }
+    .item:nth-child(3) .txt{
+      background-color: rgba(254, 201, 121, .7);
+    }
+    .item:nth-child(4) .txt{
+      background-color: rgba(149, 219, 214, .7);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- item1 -->
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/600/350/?random=110">
+      </div>
+      <div class="txt">
+        <h2>金魚都懂的切版</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores voluptatibus illum odit, ipsa vel veniam nobis cupiditate doloribus officiis voluptatum obcaecati cum facilis eaque animi natus consectetur numquam debitis velit.</p>
+      </div>
+    </div>
+    <!-- item2 -->
+    <div class="item">
+      <div class="txt">
+        <h2>我的記憶力只有三秒</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aut eos, id corporis minima dignissimos necessitatibus! Minima neque exercitationem rem eum voluptates quasi commodi ducimus aspernatur tenetur alias, eligendi reprehenderit!</p>
+      </div>
+      <div class="pic">
+        <img src="https://picsum.photos/600/350/?random=111">
+      </div>
+      
+    </div>
+    <!-- item3 -->
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/600/350/?random=112">
+      </div>
+      <div class="txt">
+        <h2>這裡打很重要的暴力班廣告</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem commodi laudantium praesentium dolorum quia atque sequi! Expedita, neque officia. Eius, excepturi magni. Perferendis quaerat porro ullam a doloremque sint id?</p>
+      </div>
+    </div>
+    <!-- item4 -->
+    <div class="item">
+      <div class="txt">
+        <h2>這邊是敲碗區</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis impedit dolores rerum ea iusto id tempore? Quos libero totam non corporis voluptatum eos excepturi, reprehenderit error ullam ipsa alias vitae.</p>
+      </div>
+      <div class="pic">
+        <img src="https://picsum.photos/600/350/?random=113">
+      </div>
+      
+    </div>
+
+  </div>
+</body>
+</html>
