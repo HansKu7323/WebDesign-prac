@@ -23,6 +23,10 @@ body{
   display: flex;
   flex-direction: column;
   box-shadow: 5px 0px 10px hsla(240, 40%, 15%,.6);
+  position: relative;
+  transform: translateX(-100%);
+  /* transform: translateX(-300px); */
+  transition: .5s;
 }
 
 .side-menu form{
@@ -55,6 +59,32 @@ body{
 }
 .side-menu form button{
   width: 50px;
+}
+
+.side-menu label{
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 0 10px 10px 0;
+}
+#side-menu-switch{
+  position: absolute;
+  opacity: 0;
+}
+#side-menu-switch:checked + .side-menu label .fa{
+  transform: scale(-1);
+}
+#side-menu-switch:checked + .side-menu{
+  transform: translateX(0px);
 }
 
 
