@@ -15,32 +15,31 @@
 
 .container h1{
   width: 400px;
+  font-size: 80px;
   box-sizing: border-box;
   padding: 15px;
-  background-color: #eeeeee;
+  float: right;
+  color: #aaa;
+  position: relative;
+}
+.container h1::before{
+  content: '';
+  display: block;
   position: absolute;
-  left: 0;
-  right: 0;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border: 30px solid #eee;
   top: 0;
   bottom: 0;
   margin: auto;
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .container .txt{
   column-count: 2;
-  column-gap: 460px;
+  column-gap: 30px;
 }
 
 .container p{
   line-height: 1.6;
-  margin-bottom: 1.5em;
-}
-
-.container p::first-letter{
-  font-size: 30px;
-  float: left;
-  padding-right: 10px;
+  margin-bottom: 1em;
 }
