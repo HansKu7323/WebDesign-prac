@@ -29,10 +29,11 @@
   z-index: -1;
   width: 200px;
   height: 200px;
-  border: 30px solid #eee;
-  /* top: 0; */
+  border: 30px solid #f1c555;
+  top: 0;
   bottom: 0;
-  /* margin: auto; */
+  margin: auto;
+  transform: rotate(25deg);
 }
 .container .txt{
   column-count: 2;
@@ -41,5 +42,11 @@
 
 .container p{
   line-height: 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+.container p::first-letter{
+  font-size: 30px;
+  float: left;
+  padding-right:7px ;
 }
