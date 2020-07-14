@@ -1,0 +1,47 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" );
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC',sans-serif;
+}
+
+.wrap{
+  margin: 100px;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.container h1{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 60px;
+  margin-bottom: .5em;
+  display: flex;
+}
+.container h1::before,
+.container h1::after{
+  content: '';
+  display: block;
+  height: 5px;
+  flex-grow: 1;
+  background-color: #aaa;
+  margin: auto;
+}
+.container h1::before{
+  margin-right: .5em;
+}
+.container h1::after{
+  margin-left: .5em;
+}
+
+.container .txt{
+  box-sizing: border-box;
+}
+
+.container p{
+  margin-bottom: 1.5em;
+}
